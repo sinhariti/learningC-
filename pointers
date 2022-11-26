@@ -9,4 +9,9 @@ int main(){
     cout<<"the value in b is "<<*b<<endl; 
     // & ---> address of operator
     // * ---> derefernce operator
+    // a pointer to pointer
+    int **c=&b;
+    cout<<"the address in c is "<<c<<endl; 
+    cout<<"the value of b is "<<&b<<endl; 
+    cout<<"the value in c is "<<*c<<endl;
 }
