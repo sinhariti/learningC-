@@ -12,8 +12,14 @@ typedef struct classroom{
     int rollno;
     string name;
     string grade;
-
 }c1 ;
+
+//union - helps to optimise memory location, uses one of the parameters at a time.
+union ids{
+    int rollno;
+    int id;
+};
+
 int main(){
     struct employee Rishita;
     Rishita.eID= 10293;
@@ -29,5 +35,10 @@ int main(){
     cout<<"The value is "<<Riti.rollno<<endl;
     cout<<"The value is "<<Riti.name<<endl;
     cout<<"The value is "<<Riti.grade<<endl;
+    //union application
+    ids riti;
+    riti.id=234;
+    riti.rollno=3456;//if we try to define another variable then it overwrites the previous one.
+    cout<<"The id is "<<riti.id<<endl;
 
 }
