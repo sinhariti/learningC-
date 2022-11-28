@@ -21,6 +21,13 @@ union ids{
 };
 
 int main(){
+    //a user-defined value type used to represent a list of named integer constants
+    enum meal{
+        breakfast, lunch, dinner
+    };
+    meal m1=lunch;//can assign a variable these enum values 
+    cout<<breakfast;
+    cout<<m1;
     struct employee Rishita;
     Rishita.eID= 10293;
     Rishita.name="Rishita";
