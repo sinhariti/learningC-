@@ -4,7 +4,8 @@ using namespace std;
 //lets the complier know about function written after the main() func beforehand 
 int sum (int a, int b); //--acceptable 
 int sum(int a, b);//--unacceptable 
-int sum (int, int);//accpetable ie no need to put arguments 
+int sum (int, int);//accpetable ie no need to put arguments the complier only needs to know abt the datatypes being used in the agruments 
+
 
 int main(){
     int n1,n2;
