@@ -17,6 +17,7 @@ int main(){
     return 0;
 }
 int sum(int a,int b){
+    //formal parameters - a and b would be taking the values from the actual parameters - n1 and n2
     int c=(a+b);
     return c;
 }
